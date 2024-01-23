@@ -14,6 +14,5 @@ export async function GET(
     const products = data.products.filter((product) => {
         return product.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())
     });
-
     return Response.json(products);
 }

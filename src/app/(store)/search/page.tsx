@@ -15,7 +15,7 @@ async function searchProducts(query: string): Promise<Product[]> {
         next: {
             revalidate: 60 * 60 // 1 hour,
         }
-    });
+    }); 
     const products = await response.json();
 
     return products;
@@ -28,7 +28,7 @@ export default async function Search({ searchParams }: SearchParams) {
         redirect('/');
     }
 
-    const products = await searchProducts(query); console.log(products);
+    const products = await searchProducts(query); 
 
     return (
         <div className="flex flex-col gap-4">
