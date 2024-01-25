@@ -37,7 +37,7 @@ export default async function Search({ searchParams }: SearchParams) {
             <div className="grid grid-cols-3 gap-6">
                 {products.map((product) => {
                     return (
-                        <Link key={product.id} href={product.slug} className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end">
+                        <Link key={product.id} href={`/product/${product.slug}`} className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end">
                             <Image 
                                 src={product.image}
                                 className="group-hover:scale-105 transition-transform duration-500"
