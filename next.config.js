@@ -6,7 +6,7 @@ const nextConfig = {
         ]
     },
     eslint: {
-        ignoreDuringBuidls: true
+        ignoreDuringBuilds: true
     },
     typescript: {
         ignoreBuildErrors: true
